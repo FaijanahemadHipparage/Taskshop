@@ -1,5 +1,4 @@
-# run nginx in foreground
-CMD ["nginx", "-g", "daemon off;"]
+
 
 
 # File: .github/workflows/deploy.yml

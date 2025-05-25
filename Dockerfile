@@ -25,3 +25,6 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 
 # expose port 80
 EXPOSE 80
+
+# run nginx in foreground
+CMD ["nginx", "-g", "daemon off;"]

@@ -28,7 +28,7 @@ jobs:
               uses: appleboy/ssh-action@v0.1.6
               with:
                   # 4a) Which server to connect to (stored as a secret)
-                  host: ${{ secrets.EC2_HOST }}
+                   host: ${{ secrets.EC2_HOST }}
 
 
                   # 4b) Which user on that server (Ubuntu AMIs use "ubuntu")
@@ -36,11 +36,11 @@ jobs:
 
 
                   # 4c) SSH private key (stored as a secret, exported from PuTTYgen or OpenSSH)
-                  key: ${{ secrets.EC2_SSH_KEY }}
+                   key: ${{ secrets.EC2_SSH_KEY }}
 
 
                   # 4d) SSH port (standard is 22)
-                  port: ${{ secrets.EC2_PORT }}
+                   port: ${{ secrets.EC2_PORT }}
 
 
                   # 5) The actual shell script to run over SSH

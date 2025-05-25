@@ -81,7 +81,10 @@ jobs:
                       # ---------------------------------------------------
                       # C) Pull latest code, build Docker image, and run it
                       # ---------------------------------------------------
+                      rm -rf react-app
+                      mkdir react-app
                       cd ~/react-app
+                      git clone https://github.com/FaijanahemadHipparage/Taskshop.git .
                       git fetch origin main
                       git reset --hard origin/main
 

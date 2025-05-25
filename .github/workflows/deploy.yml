@@ -32,7 +32,7 @@ jobs:
 
 
                   # 4b) Which user on that server (Ubuntu AMIs use "ubuntu")
-                  username: ubuntu
+                   host: ${{ secrets.EC2_USERNAME }}
 
 
                   # 4c) SSH private key (stored as a secret, exported from PuTTYgen or OpenSSH)
@@ -40,7 +40,7 @@ jobs:
 
 
                   # 4d) SSH port (standard is 22)
-                  port: 22
+                  port: ${{ secrets.EC2_PORT }}
 
 
                   # 5) The actual shell script to run over SSH

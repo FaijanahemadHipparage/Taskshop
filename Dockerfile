@@ -20,7 +20,7 @@ RUN rm -rf /usr/share/nginx/html/*
 
 
 # copy built files
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/build /usr/share/nginx/html
 
 
 # expose port 80
